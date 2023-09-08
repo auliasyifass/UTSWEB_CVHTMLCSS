@@ -1,0 +1,134 @@
+/* CSS Untuk Jumbotron */
+.jumbotron {
+  padding-top: 6rem; /* Padding atas sebesar 6rem pada elemen dengan class 'jumbotron' */
+  background-color: #e2edff; /* Warna latar belakang 'jumbotron' */
+}
+
+/* CSS Untuk Teks Display 4 */
+.display-4 {
+  font-size: 2.5rem; /* Ukuran font 2.5rem pada elemen dengan class 'display-4' */
+  margin-top: 1rem; /* Menambahkan margin atas sebesar 1rem agar tidak langsung menempel pada gambar */
+  animation: wave 2s infinite; /* Animasi 'wave' dengan durasi 2 detik yang berulang secara tak terbatas */
+}
+
+/* Animasi Keyframes untuk 'wave' */
+@keyframes wave {
+  0%,
+  100% {
+    transform: translateY(0); /* Posisi awal tanpa perubahan */
+  }
+  25% {
+    transform: translateY(-10px); /* Posisi 25% ke atas */
+  }
+  50% {
+    transform: translateY(10px); /* Posisi tengah dengan perubahan naik turun */
+  }
+  75% {
+    transform: translateY(-5px); /* Posisi 75% ke atas */
+  }
+}
+
+/* CSS Untuk Seluruh Body Dokumen */
+body {
+  font-family: Verdana, sans-serif; /* Font family yang digunakan untuk seluruh teks dalam body */
+}
+
+/* CSS Untuk Tabel */
+table {
+  border-collapse: collapse; /* Tabel tanpa border antar sel */
+  width: 100%; /* Lebar tabel 100% dari container */
+}
+
+th,
+td {
+  border-bottom: 1px solid white; /* Garis bawah setiap sel tabel */
+  padding: 8px; /* Ruang padding di dalam sel */
+  text-align: left; /* Teks rata kiri dalam sel */
+}
+
+th:first-child,
+td:first-child {
+  width: 50px; /* Lebar sel pertama */
+}
+
+th:not(:first-child),
+td:not(:first-child) {
+  width: 100px; /* Lebar sel selain sel pertama */
+}
+
+/* CSS Untuk Baris Ganjil dan Genap pada Tabel */
+tbody tr:nth-child(odd) {
+  background-color: #81cfe0; /* Warna latar belakang untuk baris ganjil */
+  color: white; /* Warna teks untuk baris ganjil */
+}
+
+tbody tr:nth-child(even) {
+  background-color: #81cfe0; /* Warna latar belakang untuk baris genap */
+  color: white; /* Warna teks untuk baris genap */
+}
+
+/* CSS Untuk Efek Hover pada Baris Tabel */
+tbody tr:hover {
+  background-color: #ff5733; /* Warna latar belakang saat hover */
+  color: white; /* Warna teks saat hover */
+}
+
+/* CSS Untuk Bagian 'projects' */
+#projects {
+  background-color: hsl(217, 100%, 94%); /* Warna latar belakang untuk elemen dengan ID 'projects' */
+}
+
+/* CSS Untuk Elemen dengan Class 'section' */
+.section {
+  padding-top: 4rem; /* Padding atas sebesar 4rem pada elemen dengan class 'section' */
+}
+
+/* CSS Untuk Efek Hover pada Gambar dalam Card */
+.card:hover img {
+  transform: scale(1.05); /* Perbesar gambar saat hover */
+  transition: transform 0.3s ease-in-out; /* Efek transisi perubahan ukuran */
+}
+
+/* CSS Untuk Efek Hover pada Card */
+.card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Efek bayangan dan naikkan card saat hover */
+  transform: translateY(-5px); /* Geser card ke atas saat hover */
+  transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out; /* Efek transisi perubahan bayangan dan posisi */
+}
+
+/* Animasi Keyframes untuk 'moveUpDown' pada Bagian 'About Me' */
+@keyframes moveUpDown {
+  0%,
+  100% {
+    transform: translateY(0); /* Posisi awal tanpa perubahan */
+  }
+  50% {
+    transform: translateY(-5px); /* Posisi tengah dengan perubahan naik */
+  }
+}
+
+/* Apply animasi 'moveUpDown' pada judul 'About Me' */
+#about h2 {
+  animation: moveUpDown 2s infinite;
+}
+
+/* Apply animasi 'moveUpDown' pada judul 'Projects' */
+#projects h2 {
+  animation: moveUpDown 2s infinite;
+}
+
+/* CSS Untuk Ikon */
+.icon {
+  width: 50px; /* Sesuaikan ukuran ikon sesuai kebutuhan */
+  height: 50px; /* Sesuaikan ukuran ikon sesuai kebutuhan */
+  margin: 0 10px; /* Berikan jarak antara ikon */
+}
+
+/* Animasi Keyframes untuk 'moveUpDown' pada Bagian 'Contact' */
+#contact h2 {
+  animation: moveUpDown 2s infinite;
+}
+
+.contact {
+  margin-top: 2rem; /* Margin atas sebesar 2rem pada elemen dengan class 'contact' */
+}
